@@ -8,16 +8,26 @@ package org.mycomp.services;
 import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
 import org.apache.commons.codec.binary.Base64;
+import org.springframework.stereotype.Service;
 
 /**
  *
  * @author mmkamm
  */
-public class AdvancedEncryptionStandard {
-    private final String encryptionKey;
 
-    public AdvancedEncryptionStandard(String encryptionKey) {
+@Service
+public class AdvancedEncryptionStandard {
+    private String encryptionKey;
+
+    public String getEncryptionKey() {
+        return encryptionKey;
+    }
+
+    public void setEncryptionKey(String encryptionKey) {
         this.encryptionKey = encryptionKey;
+    }
+
+    public AdvancedEncryptionStandard(){
     }
 
     public String encrypt(String plainText) throws Exception {
