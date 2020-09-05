@@ -1,14 +1,11 @@
 package org.mycomp;
 
 import java.io.File;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 import org.mycomp.services.Controller;
 import org.mycomp.services.StaticContent;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
@@ -28,7 +25,7 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        //mobile app "Title";"Category";"Username";"Password";"Website";"Comment"
+        //mobile app "Title";"Category";"Username";"Credentials";"Website";"Comment"
         //to app otan kaneis export bgazei ta fields me mia seira kai meta oloi oi kodikoi akolouthoun auti tin seira.
         // opote egw edw tha prepei na exw ena default tropo all otan iparxoun kai alla field na uparxoun apothikeumena..kai na ginontai apply se ola ta pass
         //"fb"
